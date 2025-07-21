@@ -5,7 +5,9 @@ Basic Hardware list for set up Headless setup
 
 Android phone
 
-2Micro Usc Data Chords (not charging chord)
+SD Card at least 8GB recomended (I only have 64GB and works fine)
+
+2Micro Usb Data Chords (not charging chord)
 
 Computer (for image flashing)
 
