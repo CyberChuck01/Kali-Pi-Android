@@ -21,7 +21,10 @@ NetHunter KeX (VNC for interface)
 
 Software on Computer
 
+Putty (if using windows for ssh)
+
 Raspberry Pi Imager
+
 Kali for Raspberry Pi Zero 2W  https://kali.download/arm-images/kali-2025.2/kali-linux-2025.2-raspberry-pi-zero-w-armel.img.xz  
 (DO NOT DOWNLOAD THE TAILS OS VERSION)
 
