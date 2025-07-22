@@ -1,0 +1,107 @@
+Phone Only
+
+On Computer
+Download the Raspberry pi imager
+"Select Model" "Raspberry Pi Zero 2w"
+"Chooses OS" "Other Specific-Purpose OS" "Kali Linux" "Raspberry Pi zero 2W" (NOT PI-TAILS)
+"Storage" "Sd Card"
+"Next"
+"Enable Settings"
+"Set username & password" (kali\kali)
+"Configure wireless LAN" (use your phone hotspot SSID and Password)
+Set wireless country and timezone
+Set Keyboard layout
+"Services" "Enable SSH"
+"SAVE"
+"Apply custom setting"
+
+On Phone
+Goto "Settings/About phone/ Software information" and click "Build number" about 5 times to turn on "developer options" 
+Go back to settings and turn on "Developer Options" (some phone may have the option to "install from unknown sources" to enable)
+In google search bar type "Nethunter store" and download the app from store.nethunter.com
+Look for the magifying glaass in the bootom right corner
+Download "Termux version 0.118.0" and "Nethunter Kex"
+Remove sd card from computer when flashing process is complete and inesert into the Raspberry pi Zero2w
+Make sure your Hotspot is up and running
+Connect the Micro usb Cable to the Power Port on the Raspi0 (right most port)
+Open your hotspot settings and wait for connection (5 mins or so)
+Press on "kali-P-zero-W" (You need the Raspbrry PI's Ip Address)
+Host name or ip = kali@10.0.0.185   (10.0.0.185 maybe different but sometimes default ip)
+Goto "downloads" and install "Termux" and allow the installation (while in downloads folder install "NetHunter KeX")
+Open "Termux"
+Type   pkg update && pkg upgrade -y then "y" to accept keep pressing y to accept packages
+Next   pkg install openssh "y"  
+Type ssh kali@0.0.0.0   (0.0.0.0 is the raspberry pi ip address from your hotspot settings)
+Then "yes" to accept fingerprint of the connection
+Enter password kali (you cannot see the password)
+Your screen should say (kali@kali-raspberry-pi-zero-2-w)-[~]
+Now enter kex start
+Enter sudo apt update
+      sudo apt upgrade "y" (It used 1.24GB of my hotspot)
+      vncserver
+enter vnc password kalikali (you cannot see the password)
+ re enter password kalikali (you cannot see the password)
+open "Nethunter KeX" app
+Connection type "Basic VNC"
+VNC Server "IP ADDRESS"    Port "5901"
+VNC Password "kalikali"
+Connect
+
+
+Computer Assist (less hotspot data)
+On Computer
+Download "Putty"
+Download the "Raspberry pi imager"
+"Select Model" "Raspberry Pi Zero 2w"
+"Chooses OS" "Other Specific-Purpose OS" "Kali Linux" "Raspberry Pi zero 2W" (NOT PI-TAILS)
+"Storage" "Sd Card"
+"Next"
+"Enable Settings"
+"Set username & password" (kali\kali)
+"Configure wireless LAN" (use your home SSID and Password you will change it later)
+Set wireless country and timezone
+Set Keyboard layout
+"Services" "Enable SSH"
+"SAVE"
+"Apply custom setting"
+
+On Phone
+Goto "Settings/About phone/ Software information" and click "Build number" about 5 times to turn on "developer options" 
+Go back to settings and turn on "Developer Options" (some phone may have the option to "install from unknown sources" to enable)
+In google search bar type "Nethunter store" and download the app from store.nethunter.com
+Look for the magifying glaass in the bootom right corner
+Download "Termux version 0.118.0" and "Nethunter Kex"
+Remove sd card from computer when flashing process is complete and inesert into the Raspberry pi Zero2w
+Make sure your Hotspot is up and running
+Connect the Micro usb Cable to the Power Port on the Raspi0 (right most port)
+Find "kali-P-zero-W"in your connected devices on your router (You need the Raspbrry PI's Ip Address)
+Open "Putty" enter your raspberry pi ip address = kali@10.0.0.185   (10.0.0.185 maybe different but sometimes default ip)
+Enter the password kali (you cannot see the password)
+Enter sudo apt update
+      sudo apt upgrade "y" (It used 1.24GB of my hotspot)
+
+On Phone
+Turn on hotspot
+
+On Computer in Putty
+Enter nmcli d wifi list
+      nmcli device wifi connect "hotpot" password "hotspot password"
+      systemctl restart NetworkManager
+On Phone
+You should see connection to your hotpot (the ip address might change)
+Goto "downloads" and install "Termux" and allow the installation (while in downloads folder install "NetHunter KeX")
+Open "Termux"
+Type   pkg update && pkg upgrade -y then "y" to accept keep pressing y to accept packages
+Next   pkg install openssh "y"  
+Type ssh kali@0.0.0.0   (0.0.0.0 is the raspberry pi ip address from your hotspot settings)
+Then "yes" to accept fingerprint of the connection
+Enter password kali (you cannot see the password)
+Your screen should say (kali@kali-raspberry-pi-zero-2-w)-[~]
+Now enter vncserver
+enter vnc password kalikali (you cannot see the password)
+ re enter password kalikali (you cannot see the password)
+open "Nethunter KeX" app
+Connection type "Basic VNC"
+VNC Server "IP ADDRESS"    Port "5901"
+VNC Password "kalikali"
+Connect
