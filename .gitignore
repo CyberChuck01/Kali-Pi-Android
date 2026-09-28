@@ -1,0 +1,5 @@
+*.img
+*.img.xz
+*.iso
+.DS_Store
+Thumbs.db
